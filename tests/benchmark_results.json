@@ -1,0 +1,1066 @@
+{
+  "timestamp": "2026-05-07T10:51:10.738844",
+  "configs": [
+    "无反思",
+    "1轮反思",
+    "2轮反思"
+  ],
+  "quick_mode": {
+    "enabled": false,
+    "quick_only": "all",
+    "skip_reflection": false,
+    "max_workers": 4
+  },
+  "results": [
+    {
+      "test_id": "rag_03",
+      "config": "无反思",
+      "score": 9.5,
+      "success": true,
+      "elapsed_ms": 4.561899928376079,
+      "token_estimate": 193,
+      "output_preview": "（模拟回答）根据相关资料，与您的问题「PyTorch 和 TensorFlow 的区别是什么？」相关的信息如下：\n\n- [1] (📄PyTorch | 相关度:91%)\n- PyTorch 使用动态计算图，调试方便，适合研究和快速原型开发。由 Meta 开发维护。\n- [2] (📄TensorFlow | 相关度:89%)\n- TensorFlow 使用静态计算图（2.0 后支持 Eager Execution），适合生产部署。由 Google 开发维护。\n- PyTorch 和 TensorFlow 的区别是什么？\n\n⚠️ 此为模拟回答（LLM 不可用时的兜底）。请检查 LLM 配置。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.5,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 0.5,
+        "comment": "答案准确且完整覆盖所有指定关键点，严格基于参考资料。但回答为系统兜底模板直接拼接，缺乏自然语言组织与流畅度。"
+      }
+    },
+    {
+      "test_id": "rag_04",
+      "config": "无反思",
+      "score": 9.0,
+      "success": true,
+      "elapsed_ms": 4.1414001025259495,
+      "token_estimate": 201,
+      "output_preview": "（模拟回答）根据相关资料，与您的问题「什么是 Docker，它解决了什么问题？」相关的信息如下：\n\n- [1] (📄Docker概述 | 相关度:94%)\n- Docker 是一个容器化平台，将应用及其依赖打包到轻量级容器中，确保环境一致性。\n- [2] (📄Docker价值 | 相关度:87%)\n- Docker 解决了“在我机器上能跑”的问题——开发、测试、生产环境保持一致。\n\n⚠️ 此为模拟回答（LLM 不可用时的兜底）。请检查 LLM 配置。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 1.5,
+        "language_quality": 0.5,
+        "comment": "答案准确覆盖所有关键点，但引用标记格式与参考资料不一致，且末尾警告信息影响语言流畅性。"
+      }
+    },
+    {
+      "test_id": "rag_01",
+      "config": "无反思",
+      "score": 9.5,
+      "success": true,
+      "elapsed_ms": 5.455499980598688,
+      "token_estimate": 174,
+      "output_preview": "（模拟回答）根据相关资料，与您的问题「Python 是什么时候由谁创建的？」相关的信息如下：\n\n- [1] (📄Python历史 | 相关度:95%)\n- Python 是由 Guido van Rossum 于 1991 年首次发布的编程语言。\n- [2] (📄Python概述 | 相关度:88%)\n- Python 是一种解释型、面向对象的高级编程语言，以简洁语法著称。\n\n⚠️ 此为模拟回答（LLM 不可用时的兜底）。请检查 LLM 配置。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.5,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 0.5,
+        "comment": "事实准确且完整覆盖关键点，引用规范。但答案为系统兜底格式，包含警告提示，缺乏自然语言整合，流畅度一般。"
+      }
+    },
+    {
+      "test_id": "rag_02",
+      "config": "无反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 4.019199870526791,
+      "token_estimate": 182,
+      "output_preview": "（模拟回答）根据相关资料，与您的问题「Python 的主要特点有哪些？」相关的信息如下：\n\n- [1] (📄Python特点 | 相关度:92%)\n- Python 的主要特点包括：动态类型系统、自动内存管理（垃圾回收）、丰富的标准库。\n- [2] (📄Python范式 | 相关度:85%)\n- Python 支持多种编程范式：面向对象、函数式、过程式编程。\n\n⚠️ 此为模拟回答（LLM 不可用时的兜底）。请检查 LLM 配置。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确完整地覆盖了所有关键特点，严格基于参考资料，引用规范，语言清晰流畅。"
+      }
+    },
+    {
+      "test_id": "rag_05",
+      "config": "无反思",
+      "score": 9.5,
+      "success": true,
+      "elapsed_ms": 0.9673000313341618,
+      "token_estimate": 221,
+      "output_preview": "（模拟回答）根据相关资料，与您的问题「REST API 和 GraphQL 各有什么优缺点？」相关的信息如下：\n\n- [1] (📄REST | 相关度:90%)\n- REST API 使用标准 HTTP 方法（GET/POST/PUT/DELETE），接口简单，缓存友好，但可能存在过度获取（over-fetching）问题。\n- [2] (📄GraphQL | 相关度:88%)\n- GraphQL 允许客户端精确指定所需字段，避免过度获取，但学习曲线较陡，缓存实现更复杂。\n- REST API 和 GraphQL 各有什么优缺点？\n\n⚠️ 此为模拟回答（LLM 不可用时的兜底）。请检查 LLM",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.5,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 0.5,
+        "comment": "内容准确且完整覆盖所有关键对比点，严格基于参考资料。但回答为系统兜底格式，包含冗余元数据与警告提示，语言组织不够自然流畅。"
+      }
+    },
+    {
+      "test_id": "rag_07",
+      "config": "无反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 0.7668000180274248,
+      "token_estimate": 187,
+      "output_preview": "（模拟回答）根据相关资料，与您的问题「HTTPS 是如何保证安全性的？」相关的信息如下：\n\n- [1] (📄HTTPS原理 | 相关度:95%)\n- HTTPS 通过 TLS/SSL 协议加密通信，使用非对称加密交换密钥，对称加密传输数据。\n- [2] (📄HTTPS证书 | 相关度:89%)\n- HTTPS 还通过数字证书验证服务器身份，防止中间人攻击（MITM）。\n\n⚠️ 此为模拟回答（LLM 不可用时的兜底）。请检查 LLM 配置。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "回答完全基于参考资料，准确且完整覆盖TLS/SSL、非对称/对称加密、数字证书及中间人攻击等所有关键点，结构清晰，语言流畅，符合满分标准。"
+      }
+    },
+    {
+      "test_id": "rag_08",
+      "config": "无反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 0.920100137591362,
+      "token_estimate": 209,
+      "output_preview": "（模拟回答）根据相关资料，与您的问题「SQL 注入攻击的原理和防护方法？」相关的信息如下：\n\n- [1] (📄SQL注入原理 | 相关度:94%)\n- SQL 注入攻击通过将恶意 SQL 代码插入输入字段，欺骗数据库执行非预期查询。\n- [2] (📄SQL注入防护 | 相关度:90%)\n- 防护方法包括：参数化查询（Prepared Statement）、输入验证、ORM 框架、最小权限原则。\n\n⚠️ 此为模拟回答（LLM 不可用时的兜底）。请检查 LLM 配置。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确完整地覆盖了攻击原理与全部关键防护点，严格基于参考资料，表述清晰流畅。"
+      }
+    },
+    {
+      "test_id": "rag_06",
+      "config": "无反思",
+      "score": 8.5,
+      "success": true,
+      "elapsed_ms": 0.9405000600963831,
+      "token_estimate": 202,
+      "output_preview": "（模拟回答）根据相关资料，与您的问题「Git 中 merge 和 rebase 的区别？」相关的信息如下：\n\n- [1] (📄Merge | 相关度:93%)\n- git merge 创建一个新的合并提交（merge commit），保留完整的分支历史。适合公共分支。\n- [2] (📄Rebase | 相关度:91%)\n- git rebase 将当前分支的提交重新应用到目标分支顶部，产生线性历史。适合个人分支整理。\n- Git 中 merge 和 rebase 的区别？\n\n⚠️ 此为模拟回答（LLM 不可用时的兜底）。请检查 LLM 配置。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 8.5,
+        "accuracy": 4.0,
+        "completeness": 2.0,
+        "citation_quality": 2.0,
+        "language_quality": 0.5,
+        "comment": "准确引用参考资料，涵盖merge保留历史、合并提交及rebase线性历史，但缺失“改写历史”要点。包含模拟兜底提示略影响语言流畅度，核心事实正确。"
+      }
+    },
+    {
+      "test_id": "rag_09",
+      "config": "无反思",
+      "score": 9.0,
+      "success": true,
+      "elapsed_ms": 0.7927000988274813,
+      "token_estimate": 188,
+      "output_preview": "（模拟回答）根据相关资料，与您的问题「微服务架构的优缺点？」相关的信息如下：\n\n- [1] (📄微服务优势 | 相关度:92%)\n- 微服务优势：独立部署、技术栈灵活、团队自治、可伸缩性强。\n- [2] (📄微服务挑战 | 相关度:88%)\n- 微服务挑战：分布式系统复杂性、网络延迟、数据一致性、运维成本高。\n\n⚠️ 此为模拟回答（LLM 不可用时的兜底）。请检查 LLM 配置。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 1.5,
+        "language_quality": 0.5,
+        "comment": "内容准确覆盖全部关键点且严格对应参考资料，但末尾模拟提示影响语言专业性，引用标注方式稍显冗余。"
+      }
+    },
+    {
+      "test_id": "cr_01",
+      "config": "无反思",
+      "score": 2.5,
+      "success": false,
+      "elapsed_ms": 0.363699859008193,
+      "token_estimate": 71,
+      "output_preview": "这是一段 python 代码，共 6 行，包含 1 个逻辑块：function process_data。\n⚠️ 使用了裸 except (bare except)，建议捕获具体异常类型（如 ValueError）",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 2.5,
+        "issue_discovery": 1.5,
+        "analysis_depth": 0.5,
+        "suggestion_quality": 0.5,
+        "comment": "仅识别出bare_except，遗漏了division_by_zero和key_error；分析流于表面，修复建议未覆盖核心风险且示例异常类型不准确。"
+      }
+    },
+    {
+      "test_id": "cr_03",
+      "config": "无反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 0.30259997583925724,
+      "token_estimate": 48,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function fetch_user。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述了代码基本结构，未识别出任何预期安全问题，缺乏分析与修复建议。"
+      }
+    },
+    {
+      "test_id": "rag_10",
+      "config": "无反思",
+      "score": 9.8,
+      "success": true,
+      "elapsed_ms": 0.5562999285757542,
+      "token_estimate": 164,
+      "output_preview": "（模拟回答）根据相关资料，与您的问题「什么是 CI/CD？」相关的信息如下：\n\n- CD（持续交付/部署）在 CI 基础上自动将通过测试的代码部署到生产环境。\n- CI（持续集成）指代码频繁合并到主干，自动构建和测试，快速发现集成问题。\n\n⚠️ 此为模拟回答（LLM 不可用时的兜底）。请检查 LLM 配置。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.8,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 0.8,
+        "comment": "答案准确且完整覆盖所有关键点，完全基于参考资料。但包含系统兜底提示语，略微影响阅读体验。"
+      }
+    },
+    {
+      "test_id": "cr_02",
+      "config": "无反思",
+      "score": 5.5,
+      "success": false,
+      "elapsed_ms": 0.532899983227253,
+      "token_estimate": 74,
+      "output_preview": "这是一段 python 代码，共 5 行，包含 1 个逻辑块：function read_file。\n⚠️ 检测到 open() 未使用 with 语句，可能导致文件资源泄露",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 5.5,
+        "issue_discovery": 3.5,
+        "analysis_depth": 1.5,
+        "suggestion_quality": 0.5,
+        "comment": "准确识别了未使用with语句及资源泄露问题，但未深入分析异常场景下的失败风险，且缺乏明确的修复代码示例。"
+      }
+    },
+    {
+      "test_id": "cr_06",
+      "config": "无反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 0.34740008413791656,
+      "token_estimate": 46,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function delete_user。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述了代码结构，未识别出os.system使用及命令注入漏洞，缺乏安全分析与修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_04",
+      "config": "无反思",
+      "score": 6.5,
+      "success": true,
+      "elapsed_ms": 0.327700050547719,
+      "token_estimate": 77,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function add_item。\n⚠️ 函数 'add_item' 使用了可变默认参数（List），可能导致意外的状态跨调用共享",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 6.5,
+        "issue_discovery": 5.0,
+        "analysis_depth": 1.5,
+        "suggestion_quality": 0.0,
+        "comment": "准确识别了可变默认参数问题，但分析仅停留在表面现象，未解释Python默认参数在定义时求值的机制，且完全缺失修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_05",
+      "config": "无反思",
+      "score": 7.0,
+      "success": true,
+      "elapsed_ms": 0.3628998529165983,
+      "token_estimate": 81,
+      "output_preview": "这是一段 python 代码，共 4 行，包含 1 个逻辑块：function authenticate。\n🔒 检测到可能的硬编码敏感信息 (password)，建议使用环境变量或密钥管理服务",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 7.0,
+        "issue_discovery": 4.0,
+        "analysis_depth": 1.5,
+        "suggestion_quality": 1.5,
+        "comment": "准确识别硬编码密码，但未明确指出明文比对风险；分析较简略，建议补充密码哈希与加盐处理方案。"
+      }
+    },
+    {
+      "test_id": "cr_07",
+      "config": "无反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 0.38490002043545246,
+      "token_estimate": 49,
+      "output_preview": "这是一段 python 代码，共 5 行，包含 1 个逻辑块：function calculate_average。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述了代码结构，未识别出非Pythonic循环和除零错误，缺乏深入分析与具体修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_08",
+      "config": "无反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 0.30399998649954796,
+      "token_estimate": 41,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function hash_password。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述了代码结构，未识别出MD5不安全及无盐值等预期问题，缺乏分析与修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_09",
+      "config": "无反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 0.5988001357764006,
+      "token_estimate": 62,
+      "output_preview": "这是一段 python 代码，共 7 行，包含 1 个逻辑块：function nested_loop。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述代码基础结构，未识别嵌套循环、性能问题及O(n^2)复杂度，缺乏分析与建议。"
+      }
+    },
+    {
+      "test_id": "cr_10",
+      "config": "无反思",
+      "score": 3.0,
+      "success": false,
+      "elapsed_ms": 0.3862997982650995,
+      "token_estimate": 83,
+      "output_preview": "这是一段 python 代码，共 8 行，包含 2 个逻辑块：class User、function save_user。\n📝 代码中有 TODO/FIXME/HACK 标记，可能有未完成的工作",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 3.0,
+        "issue_discovery": 2.0,
+        "analysis_depth": 1.0,
+        "suggestion_quality": 0.0,
+        "comment": "仅识别出TODO标记，遗漏了incomplete和no_validation问题，缺乏深入分析和具体修复建议。"
+      }
+    },
+    {
+      "test_id": "rag_01",
+      "config": "1轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 19881.137899821624,
+      "token_estimate": 543,
+      "output_preview": "根据现有资料，Python 是由 Guido van Rossum 于 1991 年首次发布的 [1]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确无误，完整覆盖了所有指定关键点，引用规范且基于参考资料，语言清晰流畅。"
+      }
+    },
+    {
+      "test_id": "rag_03",
+      "config": "1轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 27234.495399985462,
+      "token_estimate": 642,
+      "output_preview": "根据现有资料，PyTorch 和 TensorFlow 的主要区别如下：\n\n- **计算图机制**：PyTorch 使用动态计算图 [1]；TensorFlow 使用静态计算图（2.0 后支持 Eager Execution）[2]。\n- **适用场景**：PyTorch 调试方便，适合研究和快速原型开发 [1]；TensorFlow 适合生产部署 [2]。\n- **开发维护方**：PyTorch 由 Meta 开发维护 [1]；TensorFlow 由 Google 开发维护 [2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案完全基于参考资料，准确且完整地涵盖了所有指定关键点，引用规范对应，语言清晰流畅，结构条理分明。"
+      }
+    },
+    {
+      "test_id": "rag_02",
+      "config": "1轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 22610.506900120527,
+      "token_estimate": 614,
+      "output_preview": "根据现有资料，Python 的主要特点包括：\n- 动态类型系统 [1]\n- 自动内存管理（垃圾回收） [1]\n- 丰富的标准库 [1]\n\n此外，上下文还指出 Python 支持多种编程范式，包括面向对象、函数式和过程式编程 [2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确完整地覆盖了所有指定关键点，引用规范且与参考资料严格对应，语言清晰流畅。"
+      }
+    },
+    {
+      "test_id": "rag_04",
+      "config": "1轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 10118.386200163513,
+      "token_estimate": 639,
+      "output_preview": "根据现有资料，回答如下：\n\n* **Docker 是什么**：Docker 是一个容器化平台，能够将应用及其依赖打包到轻量级容器中 [1]。\n* **解决的问题**：它主要解决了“在我机器上能跑”的问题，通过确保开发、测试与生产环境的一致性来实现 [1][2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确覆盖所有关键点，引用正确对应参考资料，语言清晰简洁。"
+      }
+    },
+    {
+      "test_id": "rag_05",
+      "config": "1轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 14894.185199867934,
+      "token_estimate": 654,
+      "output_preview": "根据提供的资料，REST API 与 GraphQL 的优缺点如下：\n\n**REST API**\n- **优点**：使用标准 HTTP 方法（GET/POST/PUT/DELETE），接口简单，且缓存友好 [1]。\n- **缺点**：可能存在过度获取（over-fetching）问题 [1]。\n\n**GraphQL**\n- **优点**：允许客户端精确指定所需字段，从而避免过度获取 [2]。\n- **缺点**：学习曲线较陡，且缓存实现更复杂 [2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案完全基于参考资料，准确涵盖了所有关键对比点，引用规范，语言清晰流畅，结构条理分明。"
+      }
+    },
+    {
+      "test_id": "rag_07",
+      "config": "1轮反思",
+      "score": 10,
+      "success": true,
+      "elapsed_ms": 9658.786799991503,
+      "token_estimate": 654,
+      "output_preview": "根据现有资料，HTTPS 主要通过以下两个方面保证安全性：\n\n1. **加密通信**：通过 TLS/SSL 协议对通信进行加密，采用非对称加密方式交换密钥，并使用对称加密方式传输实际数据 [1]。\n2. **身份验证**：通过数字证书验证服务器身份，有效防止中间人攻击（MITM）[2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10,
+        "accuracy": 4,
+        "completeness": 3,
+        "citation_quality": 2,
+        "language_quality": 1,
+        "comment": "答案准确覆盖所有关键点，引用与参考资料严格对应，表述清晰流畅。"
+      }
+    },
+    {
+      "test_id": "rag_08",
+      "config": "1轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 9822.587999980897,
+      "token_estimate": 647,
+      "output_preview": "根据提供的资料，SQL 注入攻击的原理与防护方法如下：\n\n* **攻击原理**：通过将恶意 SQL 代码插入输入字段，欺骗数据库执行非预期查询 [1]。\n* **防护方法**：主要包括参数化查询（Prepared Statement）、输入验证、使用 ORM 框架以及遵循最小权限原则 [2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案完全基于参考资料，准确涵盖所有关键点，引用规范，语言清晰流畅。"
+      }
+    },
+    {
+      "test_id": "rag_09",
+      "config": "1轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 10211.508499924093,
+      "token_estimate": 612,
+      "output_preview": "根据提供的资料，微服务架构的优缺点如下：\n\n**优点（优势）**[1]：\n- 独立部署\n- 技术栈灵活\n- 团队自治\n- 可伸缩性强\n\n**缺点（挑战）**[2]：\n- 分布式系统复杂性\n- 网络延迟\n- 数据一致性\n- 运维成本高",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案完全覆盖所有关键点，准确引用参考资料，结构清晰且语言流畅。"
+      }
+    },
+    {
+      "test_id": "cr_01",
+      "config": "1轮反思",
+      "score": 2.5,
+      "success": false,
+      "elapsed_ms": 3.2001000363379717,
+      "token_estimate": 571,
+      "output_preview": "这是一段 python 代码，共 6 行，包含 1 个逻辑块：function process_data。\n⚠️ 使用了裸 except (bare except)，建议捕获具体异常类型（如 ValueError）",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 2.5,
+        "issue_discovery": 1.5,
+        "analysis_depth": 0.5,
+        "suggestion_quality": 0.5,
+        "comment": "仅识别出bare_except，遗漏了division_by_zero和key_error，且建议捕获的异常类型不准确，缺乏深入分析。"
+      }
+    },
+    {
+      "test_id": "rag_10",
+      "config": "1轮反思",
+      "score": 9.5,
+      "success": true,
+      "elapsed_ms": 10762.410999974236,
+      "token_estimate": 637,
+      "output_preview": "根据现有资料，CI/CD 由以下两部分组成：\n\n* **CI（持续集成）**：指代码频繁合并到主干，自动构建和测试，以快速发现集成问题 [2]。\n* **CD（持续交付/部署）**：在 CI 的基础上，自动将通过测试的代码部署到生产环境 [1]。\n\n两者结合即构成 CI/CD 流程。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.5,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 1.5,
+        "language_quality": 1.0,
+        "comment": "答案准确且完整覆盖所有关键点，语言清晰流畅。但引用编号[1][2]与参考资料标签[c1][c2]不匹配，存在轻微引用瑕疵。"
+      }
+    },
+    {
+      "test_id": "rag_06",
+      "config": "1轮反思",
+      "score": 9.0,
+      "success": true,
+      "elapsed_ms": 21208.08310015127,
+      "token_estimate": 670,
+      "output_preview": "根据现有资料，`git merge` 与 `git rebase` 的区别主要体现在以下两个方面：\n\n1. **操作机制与历史记录**\n   - `git merge` 会创建一个新的合并提交（merge commit），保留完整的分支历史 [1]。\n   - `git rebase` 会将当前分支的提交重新应用到目标分支顶部，产生线性历史 [2]。\n\n2. **适用场景**\n   - `git merge` 适合公共分支 [1]。\n   - `git rebase` 适合个人分支整理 [2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.0,
+        "accuracy": 4.0,
+        "completeness": 2.5,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确引用资料，明确对比了操作机制与适用场景，但未直接提及rebase会改写历史，完整性略有欠缺。语言清晰流畅。"
+      }
+    },
+    {
+      "test_id": "cr_03",
+      "config": "1轮反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 1.819700002670288,
+      "token_estimate": 548,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function fetch_user。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅统计了代码行数与结构，完全未识别出预期的SQL注入和字符串拼接问题，缺乏任何深度分析与修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_02",
+      "config": "1轮反思",
+      "score": 5.0,
+      "success": false,
+      "elapsed_ms": 0.9572999551892281,
+      "token_estimate": 574,
+      "output_preview": "这是一段 python 代码，共 5 行，包含 1 个逻辑块：function read_file。\n⚠️ 检测到 open() 未使用 with 语句，可能导致文件资源泄露",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 5.0,
+        "issue_discovery": 3.5,
+        "analysis_depth": 1.5,
+        "suggestion_quality": 0.0,
+        "comment": "指出了未使用with语句和资源泄露风险，但未深入分析异常场景下的执行流程，且完全缺乏具体的修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_04",
+      "config": "1轮反思",
+      "score": 6.0,
+      "success": true,
+      "elapsed_ms": 0.8636000566184521,
+      "token_estimate": 577,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function add_item。\n⚠️ 函数 'add_item' 使用了可变默认参数（List），可能导致意外的状态跨调用共享",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 6.0,
+        "issue_discovery": 5.0,
+        "analysis_depth": 1.0,
+        "suggestion_quality": 0.0,
+        "comment": "准确识别了可变默认参数问题，但缺乏对底层机制的深入解释，且未提供具体的修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_06",
+      "config": "1轮反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 1.1942998971790075,
+      "token_estimate": 546,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function delete_user。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述了代码结构，完全未识别出os.system滥用及命令注入漏洞，缺乏深度分析与具体修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_05",
+      "config": "1轮反思",
+      "score": 6.5,
+      "success": true,
+      "elapsed_ms": 0.839899992570281,
+      "token_estimate": 581,
+      "output_preview": "这是一段 python 代码，共 4 行，包含 1 个逻辑块：function authenticate。\n🔒 检测到可能的硬编码敏感信息 (password)，建议使用环境变量或密钥管理服务",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 6.5,
+        "issue_discovery": 4.0,
+        "analysis_depth": 1.0,
+        "suggestion_quality": 1.5,
+        "comment": "准确指出硬编码问题并给出有效建议，但缺乏对明文比较风险的深入分析，整体较为简略。"
+      }
+    },
+    {
+      "test_id": "cr_07",
+      "config": "1轮反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 1.1909999884665012,
+      "token_estimate": 549,
+      "output_preview": "这是一段 python 代码，共 5 行，包含 1 个逻辑块：function calculate_average。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅统计了代码行数和逻辑块，完全未识别出非Pythonic循环和除零错误，缺乏深度分析与具体修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_08",
+      "config": "1轮反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 1.8977001309394836,
+      "token_estimate": 541,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function hash_password。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述了代码结构，未识别出MD5不安全及无盐值等预期问题，缺乏分析与修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_09",
+      "config": "1轮反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 1.2583001516759396,
+      "token_estimate": 562,
+      "output_preview": "这是一段 python 代码，共 7 行，包含 1 个逻辑块：function nested_loop。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述了代码行数与结构，完全未识别嵌套循环与O(n^2)性能问题，缺乏深入分析与具体修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_10",
+      "config": "1轮反思",
+      "score": 4.0,
+      "success": false,
+      "elapsed_ms": 0.9314999915659428,
+      "token_estimate": 583,
+      "output_preview": "这是一段 python 代码，共 8 行，包含 2 个逻辑块：class User、function save_user。\n📝 代码中有 TODO/FIXME/HACK 标记，可能有未完成的工作",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 4.0,
+        "issue_discovery": 3.0,
+        "analysis_depth": 1.0,
+        "suggestion_quality": 0.0,
+        "comment": "仅识别出TODO标记，遗漏了输入验证缺失问题；分析过于表面，且未提供任何具体修复建议。"
+      }
+    },
+    {
+      "test_id": "rag_04",
+      "config": "2轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 9861.525600077584,
+      "token_estimate": 653,
+      "output_preview": "根据现有资料，回答如下：\n\n* **Docker 是什么**：Docker 是一个容器化平台，能够将应用及其依赖打包到轻量级容器中 [1]。\n* **解决的问题**：它主要解决了“在我机器上能跑”的问题，通过确保开发、测试与生产环境的一致性来消除环境差异带来的困扰 [1][2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确无误，完整覆盖所有指定关键点，引用规范恰当，语言清晰流畅。"
+      }
+    },
+    {
+      "test_id": "rag_01",
+      "config": "2轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 15135.851999977604,
+      "token_estimate": 543,
+      "output_preview": "根据现有资料，Python 是由 Guido van Rossum 于 1991 年首次发布的 [1]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确无误，完整覆盖了所有关键信息，引用规范且语言流畅。"
+      }
+    },
+    {
+      "test_id": "rag_03",
+      "config": "2轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 12980.364800198004,
+      "token_estimate": 648,
+      "output_preview": "根据现有资料，PyTorch 与 TensorFlow 的主要区别如下：\n\n* **计算图机制**：PyTorch 使用动态计算图 [1]；TensorFlow 使用静态计算图（2.0 版本后支持 Eager Execution）[2]。\n* **适用场景**：PyTorch 调试方便，更适合研究和快速原型开发 [1]；TensorFlow 更适合生产部署 [2]。\n* **开发维护方**：PyTorch 由 Meta 开发维护 [1]；TensorFlow 由 Google 开发维护 [2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案完全基于参考资料，准确涵盖了所有关键对比点（动态/静态计算图、Meta/Google、调试/生产部署），引用规范对应准确，语言结构清晰流畅。"
+      }
+    },
+    {
+      "test_id": "rag_02",
+      "config": "2轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 21118.956399848685,
+      "token_estimate": 607,
+      "output_preview": "根据现有资料，Python 的主要特点包括：\n- 动态类型系统 [1]\n- 自动内存管理（垃圾回收） [1]\n- 丰富的标准库 [1]\n\n此外，Python 还支持多种编程范式，包括面向对象、函数式与过程式编程 [2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确且完整地覆盖了所有指定关键点，引用规范对应参考资料，语言表达清晰流畅。"
+      }
+    },
+    {
+      "test_id": "rag_05",
+      "config": "2轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 15273.663899861276,
+      "token_estimate": 654,
+      "output_preview": "根据提供的资料，REST API 与 GraphQL 的优缺点如下：\n\n**REST API**\n- **优点**：使用标准 HTTP 方法（GET/POST/PUT/DELETE），接口简单，且缓存友好 [1]。\n- **缺点**：可能存在过度获取（over-fetching）问题 [1]。\n\n**GraphQL**\n- **优点**：允许客户端精确指定所需字段，从而避免过度获取 [2]。\n- **缺点**：学习曲线较陡，且缓存实现更复杂 [2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确覆盖所有关键点，引用正确对应参考资料，结构清晰且语言流畅。"
+      }
+    },
+    {
+      "test_id": "rag_07",
+      "config": "2轮反思",
+      "score": 9.5,
+      "success": true,
+      "elapsed_ms": 10033.859700197354,
+      "token_estimate": 654,
+      "output_preview": "根据现有资料，HTTPS 主要通过以下两个方面保证安全性：\n\n1. **加密通信**：通过 TLS/SSL 协议对通信进行加密，采用非对称加密方式交换密钥，并使用对称加密方式传输实际数据 [1]。\n2. **身份验证**：利用数字证书验证服务器身份，有效防止中间人攻击（MITM）[2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.5,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确覆盖所有关键点，引用与参考资料完全对应，表述清晰简洁。"
+      }
+    },
+    {
+      "test_id": "rag_06",
+      "config": "2轮反思",
+      "score": 9.0,
+      "success": true,
+      "elapsed_ms": 14816.866300068796,
+      "token_estimate": 677,
+      "output_preview": "根据现有资料，`git merge` 与 `git rebase` 的区别主要体现在以下两个方面：\n\n* **历史保留与操作机制**：`git merge` 会创建一个新的合并提交（merge commit），保留完整的分支历史 [1]；`git rebase` 则是将当前分支的提交重新应用到目标分支顶部，产生线性历史 [2]。\n* **适用场景**：`git merge` 适合用于公共分支 [1]；`git rebase` 适合用于个人分支整理 [2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.0,
+        "accuracy": 4.0,
+        "completeness": 2.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确且引用规范，清晰对比了操作机制与适用场景，但未明确提及rebase会改写历史这一关键点，完整性略有欠缺。"
+      }
+    },
+    {
+      "test_id": "rag_09",
+      "config": "2轮反思",
+      "score": 10.0,
+      "success": true,
+      "elapsed_ms": 10402.367000002414,
+      "token_estimate": 610,
+      "output_preview": "根据现有资料，微服务架构的优缺点如下：\n\n**优点（优势）：**\n- 独立部署\n- 技术栈灵活\n- 团队自治\n- 可伸缩性强 [1]\n\n**缺点（挑战）：**\n- 分布式系统复杂性\n- 网络延迟\n- 数据一致性\n- 运维成本高 [2]",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 10.0,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 2.0,
+        "language_quality": 1.0,
+        "comment": "答案准确无误，完整覆盖所有指定关键点，引用规范，结构清晰，语言流畅。"
+      }
+    },
+    {
+      "test_id": "cr_01",
+      "config": "2轮反思",
+      "score": 3.0,
+      "success": false,
+      "elapsed_ms": 1.2254000175744295,
+      "token_estimate": 571,
+      "output_preview": "这是一段 python 代码，共 6 行，包含 1 个逻辑块：function process_data。\n⚠️ 使用了裸 except (bare except)，建议捕获具体异常类型（如 ValueError）",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 3.0,
+        "issue_discovery": 1.5,
+        "analysis_depth": 1.0,
+        "suggestion_quality": 0.5,
+        "comment": "仅识别出bare_except，遗漏division_by_zero和key_error；分析较浅，建议的异常类型不准确且缺乏具体修复方案。"
+      }
+    },
+    {
+      "test_id": "rag_08",
+      "config": "2轮反思",
+      "score": 9.5,
+      "success": true,
+      "elapsed_ms": 12162.7015999984,
+      "token_estimate": 647,
+      "output_preview": "根据提供的资料，SQL 注入攻击的原理与防护方法如下：\n\n* **攻击原理**：通过将恶意 SQL 代码插入输入字段，欺骗数据库执行非预期查询 [1]。\n* **防护方法**：主要包括参数化查询（Prepared Statement）、输入验证、使用 ORM 框架以及遵循最小权限原则 [2]。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.5,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 1.5,
+        "language_quality": 1.0,
+        "comment": "答案准确覆盖所有关键点，引用内容正确但标记格式与参考资料不一致，语言清晰流畅。"
+      }
+    },
+    {
+      "test_id": "cr_02",
+      "config": "2轮反思",
+      "score": 4.5,
+      "success": false,
+      "elapsed_ms": 1.3268000911921263,
+      "token_estimate": 574,
+      "output_preview": "这是一段 python 代码，共 5 行，包含 1 个逻辑块：function read_file。\n⚠️ 检测到 open() 未使用 with 语句，可能导致文件资源泄露",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 4.5,
+        "issue_discovery": 3.5,
+        "analysis_depth": 1.0,
+        "suggestion_quality": 0.0,
+        "comment": "指出了未使用with语句和资源泄露风险，但遗漏了异常处理失败的场景，且未提供具体的修复代码建议，分析较为表面。"
+      }
+    },
+    {
+      "test_id": "rag_10",
+      "config": "2轮反思",
+      "score": 9.5,
+      "success": true,
+      "elapsed_ms": 12599.936400074512,
+      "token_estimate": 637,
+      "output_preview": "根据现有资料，CI/CD 包含以下两个核心环节：\n\n- **CI（持续集成）**：指代码频繁合并到主干，自动构建和测试，快速发现集成问题 [2]。\n- **CD（持续交付/部署）**：在 CI 基础上，自动将通过测试的代码部署到生产环境 [1]。\n\n两者结合即构成 CI/CD 流程。",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 9.5,
+        "accuracy": 4.0,
+        "completeness": 3.0,
+        "citation_quality": 1.5,
+        "language_quality": 1.0,
+        "comment": "答案准确完整，清晰流畅地涵盖了所有关键点。引用编号与参考资料标签（[c1]/[c2]）不一致，略有瑕疵。"
+      }
+    },
+    {
+      "test_id": "cr_03",
+      "config": "2轮反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 2.0967000164091587,
+      "token_estimate": 548,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function fetch_user。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述了代码基本结构，完全未识别预期的SQL注入与字符串拼接问题，缺乏深度分析与具体修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_04",
+      "config": "2轮反思",
+      "score": 6.5,
+      "success": true,
+      "elapsed_ms": 0.9406998287886381,
+      "token_estimate": 577,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function add_item。\n⚠️ 函数 'add_item' 使用了可变默认参数（List），可能导致意外的状态跨调用共享",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 6.5,
+        "issue_discovery": 5.0,
+        "analysis_depth": 1.5,
+        "suggestion_quality": 0.0,
+        "comment": "准确识别了可变默认参数问题，但缺乏对底层机制的深入解释，且未提供具体的修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_06",
+      "config": "2轮反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 0.986000057309866,
+      "token_estimate": 546,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function delete_user。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述了代码基础结构，完全未识别出os.system调用及命令注入漏洞，缺乏深入分析与具体修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_05",
+      "config": "2轮反思",
+      "score": 6.5,
+      "success": true,
+      "elapsed_ms": 1.2791999615728855,
+      "token_estimate": 581,
+      "output_preview": "这是一段 python 代码，共 4 行，包含 1 个逻辑块：function authenticate。\n🔒 检测到可能的硬编码敏感信息 (password)，建议使用环境变量或密钥管理服务",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 6.5,
+        "issue_discovery": 4.0,
+        "analysis_depth": 1.0,
+        "suggestion_quality": 1.5,
+        "comment": "准确识别硬编码密码，但分析较浅，未提及明文比对风险，建议具体实用。"
+      }
+    },
+    {
+      "test_id": "cr_09",
+      "config": "2轮反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 1.6071000136435032,
+      "token_estimate": 562,
+      "output_preview": "这是一段 python 代码，共 7 行，包含 1 个逻辑块：function nested_loop。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅统计了代码行数和逻辑块，完全未识别出嵌套循环、性能瓶颈及O(n^2)复杂度等预期问题，缺乏深入分析与具体优化建议。"
+      }
+    },
+    {
+      "test_id": "cr_08",
+      "config": "2轮反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 1.3347999192774296,
+      "token_estimate": 541,
+      "output_preview": "这是一段 python 代码，共 3 行，包含 1 个逻辑块：function hash_password。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查结果仅描述了代码结构，完全未识别出MD5不安全及无盐值等预期问题，缺乏深度分析与具体修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_07",
+      "config": "2轮反思",
+      "score": 0.0,
+      "success": false,
+      "elapsed_ms": 2.047999994829297,
+      "token_estimate": 549,
+      "output_preview": "这是一段 python 代码，共 5 行，包含 1 个逻辑块：function calculate_average。\n",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 0.0,
+        "issue_discovery": 0.0,
+        "analysis_depth": 0.0,
+        "suggestion_quality": 0.0,
+        "comment": "审查仅描述代码基础结构，未识别非Pythonic循环与除零风险，缺乏深度分析与具体修复建议。"
+      }
+    },
+    {
+      "test_id": "cr_10",
+      "config": "2轮反思",
+      "score": 3.0,
+      "success": false,
+      "elapsed_ms": 1.2409999035298824,
+      "token_estimate": 583,
+      "output_preview": "这是一段 python 代码，共 8 行，包含 2 个逻辑块：class User、function save_user。\n📝 代码中有 TODO/FIXME/HACK 标记，可能有未完成的工作",
+      "reflection_fallback": false,
+      "detail": {
+        "score": 3.0,
+        "issue_discovery": 2.0,
+        "analysis_depth": 1.0,
+        "suggestion_quality": 0.0,
+        "comment": "仅识别出 TODO 标记，遗漏了 incomplete 和 no_validation 问题；分析流于表面，且未提供任何具体的修复建议。"
+      }
+    }
+  ]
+}
