@@ -191,4 +191,9 @@ xinbinTest/
 frontend/node_modules/
 frontend/dist/
 
+# Personal files (not project-related)
+个人简历.md
+面试知识库.md
+PROJECT_MEMORY.md
+
 
