@@ -2,7 +2,7 @@
 
 个人 AI Agent 项目，基于"技能优先（Skill-First）"架构，独立实现 ReAct、Reflection、RAG、GraphRAG、LLM 意图路由等 Agent 核心设计模式。
 
-**技术栈**：Python 3.12 · LangGraph · LangChain · FastAPI · Streamlit · LiteLLM · ChromaDB · GraphRAG · Pydantic · SQLite · akshare
+**技术栈**：Python 3.12 · LangGraph · LangChain · FastAPI · Streamlit · LiteLLM · ChromaDB · GraphRAG · Pydantic · SQLite
 
 ---
 
@@ -13,14 +13,13 @@ Streamlit 前端 ──→ FastAPI 网关 ──→ 编排器 (Orchestrator)
                                        │
                   ┌────────────────────┼──────────────────────┐
                   ▼                    ▼                      ▼
-            LangGraph 图         单技能调用              API 直调
-       (DualRetrievalGraph)  (skill_manager)   (股票研报/技术雷达)
+            LangGraph 图         单技能调用            Reflection
+       (DualRetrievalGraph)  (skill_manager)         反思闭环
                   │
    ┌──────────────┼──────────────┐
    ▼              ▼              ▼
- 14 活跃技能    Reflection    Conversation
-(RAG 全链路+   反思闭环        Memory
- 金融投研)                    对话记忆
+ 12 活跃技能   Conversation   三层容错
+(RAG 全链路)   Memory        (校验/重试/熔断)
 ```
 
 ---
@@ -112,7 +111,7 @@ RulesInjector → QueryRewrite → Embed → VectorRetrieve → Rerank → Conte
 
 ## 3. 技能体系
 
-4 层分层架构：常量层 → Pydantic 数据模型层 → 核心业务逻辑层 → 技能类层。14 个活跃技能通过 SkillManager 统一注册与调用，新增技能无需修改现有代码。
+4 层分层架构：常量层 → Pydantic 数据模型层 → 核心业务逻辑层 → 技能类层。12 个活跃技能通过 SkillManager 统一注册与调用，新增技能无需修改现有代码。
 
 | 分类 | 技能 | 说明 |
 |------|------|------|
@@ -127,8 +126,6 @@ RulesInjector → QueryRewrite → Embed → VectorRetrieve → Rerank → Conte
 | 内容处理 | `text_summarizer` | 长文本摘要（启发式/TextRank/LLM） |
 | 内容处理 | `translator` | 中英互译，多风格 |
 | 代码 | `code_explainer` | 代码逐行解释 + 内嵌 Reflection 反思闭环 |
-| 金融 | `stock_watcher` | 实时行情+研报→投研日报（akshare） |
-| 金融 | `technology_radar` | 14 个技术方向全网追踪→受益股票映射 |
 | 管理 | `kb_manager` | 知识库 CRUD + 文档上传索引（策略模式路由） |
 
 ---
@@ -170,7 +167,6 @@ src/
 │   └── engine.py                 ← Agent 引擎
 ├── skills/
 │   ├── custom/rag_skills/        ← RAG 全链路（loader/chunker/embedder/rerank/...）
-│   ├── custom/finance_skills/    ← 股票研报 + 技术雷达
 │   ├── custom/reflection_skills/ ← ReflectionSkill（Reviser 节点调用）
 │   └── preset/                   ← 预设技能储备
 ├── api/
