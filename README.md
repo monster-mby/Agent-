@@ -181,16 +181,4 @@ src/
 └── core/                         ← 配置 + LiteLLM 客户端
 ```
 
-## 🚀 运行
 
-```bash
-poetry install
-cp .env.example .env    # 填入 DASHSCOPE_API_KEY
-streamlit run app.py --server.port 8501
-```
-
-## 🧪 测试
-
-```bash
-poetry run pytest -m "not real"   # 200+ 用例
-```
